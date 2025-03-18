@@ -34,7 +34,7 @@ function App() {
   useEffect(() => {
     if (data?.token) {
       embedDashboard({
-        id: "8faada2b-aa86-4cc6-9749-d83e9068c653",
+        id: process.env.REACT_APP_DASHBOARD_ID,
         supersetDomain: "https://pro.unleashnfts.com/",
         mountPoint: document.getElementById("my-superset-container"),
         fetchGuestToken: () => data?.token,
