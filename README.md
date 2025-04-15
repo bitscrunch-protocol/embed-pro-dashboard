@@ -1,70 +1,82 @@
-# Getting Started with Create React App
+# 🧩 Embed UnleashNFTs Pro Dashboards
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This template helps you easily embed **UnleashNFTs Pro Dashboards** into your site using **Apache ECharts**. It's quick to set up and requires minimal configuration.
 
-## Available Scripts
+> ⚡️ Dashboards are embedded securely using credentials and dashboard IDs. All charts and visuals are rendered via Apache ECharts.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🚀 Getting Started
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 1. Clone the Repository
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```bash
+git clone https://github.com/bitscrunch-protocol/embed-pro-dashboard.git
+cd embed-pro-dashboard
+```
 
-### `npm test`
+### 2. Install Dependencies
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Make sure you have Node.js and npm installed.
 
-### `npm run build`
+```bash
+npm install
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🔐 Environment Variables
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 3. Configure `.env` File
 
-### `npm run eject`
+Create a `.env` file by copying the `.env.sample`:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+cp .env.sample .env
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Then update the `.env` file with your credentials:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```env
+# DO NOT change this API URL
+REACT_APP_API_URL=https://unleashnfts.com/api/security/embed_dashboard
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+# 🔄 Replace the following values with your actual credentials
+REACT_APP_DASHBOARD_ID='YOUR_DASHBOARD_ID'
+REACT_APP_PRO_DASHBOARD_USERNAME='YOUR_DASHBOARD_USERNAME'
+REACT_APP_PRO_DASHBOARD_PASSWORD='YOUR_DASHBOARD_PASSWORD'
+```
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🧪 Run the App
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Start the development server:
 
-### Code Splitting
+```bash
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Open your browser and go to `http://localhost:3000` to view the embedded dashboard.
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 📦 Build for Production
 
-### Making a Progressive Web App
+To create an optimized production build:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```bash
+npm run build
+```
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 💬 Need Help?
 
-### Deployment
+For any questions or issues, feel free to reach out or raise a GitHub issue.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
+## 📄 License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+MIT © [bitsCrunch](https://bitscrunch.com)
